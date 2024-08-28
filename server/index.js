@@ -10,6 +10,7 @@ app.use(express.json());
 app.use(
   cors({
     origin: "https://render-demo-client-6b5v.onrender.com",
+    credentials: true,
   })
 );
 
