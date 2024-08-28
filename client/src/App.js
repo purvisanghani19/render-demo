@@ -9,7 +9,7 @@ function App() {
   useEffect(() => {
     const getdata = async () => {
       const res = await axios.get(
-        "https://render-demo-client-6b5v.onrender.com/get-data"
+        "https://render-demo-backend-jlp8.onrender.com/get-data"
       );
       if (res.status === 200) {
         setmessage(res.data.res);
@@ -18,7 +18,7 @@ function App() {
 
     const getuserdata = async () => {
       const res = await axios.get(
-        "https://render-demo-client-6b5v.onrender.com/user/get-user"
+        "https://render-demo-backend-jlp8.onrender.com/user/get-user"
       );
       console.log("res", res);
       if (res.status === 200) {
